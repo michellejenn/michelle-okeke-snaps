@@ -1,0 +1,35 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+@use "../../styles/partials/mixins" as *;
+
+.photo{
+    margin: 2rem 2rem;
+    &__header{
+        font-family: "outfit";
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+    &__mission{
+        font-family: "Newsreader";
+        font-weight: 300;
+        font-size: 2.3rem;
+        line-height: 1.8;
+        word-spacing: 0.1rem;
+    }
+    &__italics{
+        font-style: italic;
+    }
+    &__list{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+        //  flex-direction: column;
+        }
+      
+    }
+}

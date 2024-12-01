@@ -1,0 +1,39 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+
+.header{
+   
+   display: flex;
+   justify-content: space-between;
+   margin: 2rem 2rem;
+   
+
+   &__title{
+    margin: 0;
+   }
+    &__button{
+        background-color: $primary-color-green;
+        padding: 0rem 1.8rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        border: none;
+        border-radius: 1.5rem;
+       
+    }
+    &__filter-text{
+        font-family: "Outfit";
+        margin: 0;
+        font-size: 1.2rem;
+        color: $secondary-color-white;
+    }
+    &__filter-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        
+       
+        
+    }
+
+}

@@ -1,0 +1,34 @@
+
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+
+.filter{
+    background-color: $secondary-color-sage;
+     padding: 2rem 2rem;
+     margin: 0;
+     font-family: "Outfit";
+     &__list{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+     }
+     &__header{
+        font-size: 1.8rem;
+        margin: 0;
+     }
+     &__item{
+        list-style-type: none;
+        color: $primary-color-green;
+        border: 2px solid $primary-color-green;
+        padding: 0.5rem 0.8rem;
+        background-color: white;
+        border-radius: 0.8rem;
+        font-size: 1.2rem;
+       
+      
+        
+        
+     }
+    
+}

@@ -1,0 +1,92 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+@use "../../styles/partials/mixins" as *;
+
+.card{
+   font-family: "outfit";
+   margin-bottom: 2rem;
+   @include tablet{
+    flex: 1;
+    
+   }
+  
+   &__item{
+    position: relative;
+    width: 90vw;
+    @include tablet{
+        width: 30vw;
+        
+    }
+   
+
+   
+   }
+    &__image{
+        width: 90vw;
+        height:50vh;
+        border: 3px solid $secondary-color-green;
+        
+        border-radius: 1rem;
+        @include tablet{
+            width: 30vw;
+            height: 40vh;
+            
+        
+        }
+    }
+    &__tags{
+        list-style-type: none;
+        padding: 0rem;
+        padding: 0.5rem ;
+        // border: 1px solid black;
+       
+        // width: 90vw;
+        margin-right: 0;
+        display: flex;
+        // justify-self: center;
+        gap: 0.8rem;
+        
+        position: absolute;
+        bottom: 0.4rem;
+        right: 0;
+        left: 0;
+        
+        background-color: $primary-color-pistachio;
+        border-radius: 0 0 1rem 1rem;
+        border-left:  0.2rem solid $secondary-color-green;
+        border-right:  0.2rem solid $secondary-color-green;
+        @include tablet{
+           display: flex;
+           flex-wrap: wrap;
+       
+        }
+        
+    }
+    &__tag-piece{
+        border: 2px solid $secondary-color-green;
+        border-radius: 0.8rem;
+        padding: 0.5rem 1rem;
+        background-color: white;
+    }
+    &__photographer{
+        // border: 3px solid $secondary-color-green;
+        // display: flex;
+        // justify-self: flex-end;
+        border-radius: 0.8rem 0 0 0;
+        padding: 0.6rem;
+        margin: 0;
+        position: absolute;
+        bottom: 3.5rem;
+        right: 0rem;
+        background-color: $primary-color-pistachio;
+        border: 1px solid $secondary-color-green;
+        border-right: 3px solid $secondary-color-green;
+        @include tablet{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+.card__item::marker{
+    content: none;
+}
