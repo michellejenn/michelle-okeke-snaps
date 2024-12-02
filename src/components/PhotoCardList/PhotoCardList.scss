@@ -6,8 +6,6 @@
     margin: 2rem 2rem;
     @include desktop{
        min-width: 60vw;
-       
-        
     }
     &__header{
         font-family: "outfit";
@@ -33,12 +31,11 @@
         display: flex;
         flex-direction: column;
         @include tablet{
-         
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-        //  flex-direction: column;
+       
         }
       
     }

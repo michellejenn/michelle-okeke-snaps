@@ -5,26 +5,21 @@
 .card{
    font-family: "outfit";
    margin-bottom: 2rem;
-   
    @include tablet{
     width: 40vw;
    }
    @include desktop{
     width: 30vw
    }
-  
    &__item{
     position: relative;
     width: 90vw;
     @include tablet{
-   
         width: 40vw;
     }
     @include desktop{
-   
         max-width: 28vw;
     }
-   
    }
     &__image{
         width: 90vw;
@@ -35,7 +30,6 @@
         @include tablet{
             width: 40vw;
             height: 35vh;
-          
         }
         @include desktop{
             max-width: 28vw;
@@ -58,12 +52,10 @@
         @include tablet{
             width: 38.5vw;
             display: flex;
-            
         }
         @include desktop{
             max-width: 26.5vw;
         }
-        
     }
     &__tag-piece{
         border: 2px solid $secondary-color-green;

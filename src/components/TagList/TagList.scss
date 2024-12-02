@@ -9,9 +9,7 @@
      margin: 0;
      font-family: "Outfit";
      @include desktop{
-      
       min-width: 25vw;
-    
      }
      &__list{
         padding: 0;
@@ -46,12 +44,7 @@
        
          font-size: 1rem;
          border-radius: 0.5rem;
-         
-      
         }
-       
-      
-        
         
      }
     

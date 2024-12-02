@@ -2,18 +2,13 @@
 @use "../../styles/partials/font" as *;
 
 .header{
-   
    display: flex;
    justify-content: space-between;
    margin: 2rem 2rem;
-   
-
    &__title{
     margin: 0;
    }
     &__button{
-        // background-color: $primary-color-green;
-        
         background-color: $primary-color-pistachio;
         padding: 0rem 1.8rem;
         height: 3rem;
@@ -26,23 +21,17 @@
         border: 3px solid $primary-color-green;
         &--active{
             background-color: $primary-color-green;
-        
             &:hover{
-                background-color: $secondary-color-green;
-              
+                background-color: $secondary-color-green; 
             }
-         
         }
         &--passive{
-    
             color: $primary-color-green;
             border: 1px solid $primary-color-green;
             &:hover{
                 background-color: $secondary-color-green;
-              
             }
         }
-       
     }
     &__filter-text{
         font-family: "Outfit";
@@ -52,7 +41,6 @@
         &--active{
             color: white;
         }
-
     }
     &__filter-icon{
         width: 1.5rem;
@@ -63,8 +51,6 @@
         &--active{
             color: white;
         }
-        
-       
         
     }
 
