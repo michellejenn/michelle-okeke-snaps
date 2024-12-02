@@ -12,7 +12,9 @@
     margin: 0;
    }
     &__button{
-        background-color: $primary-color-green;
+        // background-color: $primary-color-green;
+        
+        background-color: $primary-color-pistachio;
         padding: 0rem 1.8rem;
         height: 3rem;
         display: flex;
@@ -20,17 +22,47 @@
         gap: 0.8rem;
         border: none;
         border-radius: 1.5rem;
+        cursor: pointer;
+        border: 3px solid $primary-color-green;
+        &--active{
+            background-color: $primary-color-green;
+        
+            &:hover{
+                background-color: $secondary-color-green;
+              
+            }
+         
+        }
+        &--passive{
+    
+            color: $primary-color-green;
+            border: 1px solid $primary-color-green;
+            &:hover{
+                background-color: $secondary-color-green;
+              
+            }
+        }
        
     }
     &__filter-text{
         font-family: "Outfit";
         margin: 0;
         font-size: 1.2rem;
-        color: $secondary-color-white;
+        color: $primary-color-green;
+        &--active{
+            color: white;
+        }
+
     }
     &__filter-icon{
         width: 1.5rem;
         height: 1.5rem;
+        &--passive{
+            color: $primary-color-green;
+        }
+        &--active{
+            color: white;
+        }
         
        
         
