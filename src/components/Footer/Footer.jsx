@@ -8,12 +8,12 @@ function Footer(){
                 <h2 className="footer__snaps">Snaps</h2>
 
                 <ul className="footer__unordered">
-                    <li class="footer__list">
+                    <li className="footer__list">
                         <p className="footer__item">For photographers</p>
                         <p className="footer__item">Hire talent</p>
                         <p className="footer__item">Inspiration</p>
                     </li>
-                    <li class ="footer__list">
+                    <li className="footer__list">
                         <p className="footer__item">About</p>
                         <p className="footer__item">Careers</p>
                         <p className="footer__item">Support</p>
