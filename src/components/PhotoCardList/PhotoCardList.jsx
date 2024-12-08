@@ -1,12 +1,24 @@
 import "./PhotoCardList.scss";
-import photos from "../../data/photos.json";
+// import photos from "../../data/photos.json";
 import PhotoCard from "../PhotoCard/PhotoCard";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 
 // Defining the PhotoCardList component. This component passes data through props to the Photocard component and recieves data 
 //from the app component regarding the selected tag of the Taglist component with which it filters the cardlist component
 function PhotoCardList(props){
+    const[photos, setPhotos] = useState([])
     let filteredPhotos = [];
+
+    useEffect(()=>{
+        async function getPhotos(){
+           const response =  await axios.get(
+                "https://unit-3-project-c5faaab51857.herokuapp.com/photos/?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501")
+                setPhotos(response.data)
+        }
+        getPhotos()
+    }, [])
 
     // This conditionally filters through the cards based on selected/clicked tag and maps it for each PhotoCard Component
     if (props.selectedTag !== ""){
