@@ -4,6 +4,9 @@
 @use "../../styles/partials/font" as *;
 
 
+*{
+  box-sizing: border-box;
+}
 h1{
   font-weight: 300;
   font-size: 3rem;

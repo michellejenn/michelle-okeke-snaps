@@ -23,7 +23,7 @@
    }
     &__image{
         width: 90vw;
-        height:40vh;
+        height: auto;
         border: 3px solid $secondary-color-green;
         border-bottom: 0;
         border-radius: 1rem 1rem 0 0;
@@ -39,7 +39,7 @@
     &__tags{
         list-style-type: none;
         padding: 0.5rem 0;
-        width: 88vw;
+        width: 90vw;
         margin-right: 0;
         display: flex;
         gap: 0.8rem;
@@ -50,11 +50,11 @@
         border-right:  0.2rem solid $secondary-color-green;
         border-bottom:  0.2rem solid $secondary-color-green;
         @include tablet{
-            width: 38.5vw;
+            width: 40vw;
             display: flex;
         }
         @include desktop{
-            max-width: 26.5vw;
+            max-width: 28vw;
         }
     }
     &__tag-piece{

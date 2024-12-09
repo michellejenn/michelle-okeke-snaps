@@ -1,0 +1,17 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+@use "../../styles/partials/mixins" as *;
+
+*{
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Outfit';
+    margin: 2rem 2rem;
+    font-size: 1rem;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+   

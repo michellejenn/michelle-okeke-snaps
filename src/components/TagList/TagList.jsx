@@ -4,8 +4,7 @@ import { useState,useEffect } from "react";
 
 //Defining the TagList Component. This component receives data from the app component to conditionally display its content 
 //based on the filter button click event in the header.
-// It also listens for a click event and updates the state variable data used to filter the photoCardList.
-//The app serves as the parent for the interaction between this component and the PhotoCardList component.
+
 function TagList(props){
     const api_key = "628874a8-ed5d-4c64-9e35-3a54f31dc501"
     const [Tags, setTags] = useState([]);

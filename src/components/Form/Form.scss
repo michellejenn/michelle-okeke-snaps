@@ -1,0 +1,101 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/font" as *;
+@use "../../styles/partials/mixins" as *;
+
+
+.form__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+input{
+    border: 2px solid $secondary-color-green;
+    border-radius: 0.5rem;
+}
+.form{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    @include desktop{
+        width: 70%;
+    }
+    &__comment{
+        height: 5rem;
+        &:focus{
+            border-color: $primary-color-green;
+            outline: none;
+           
+        }
+        &.error{
+            border-color: red;
+        }
+ 
+    }
+    &__name{
+        height: 2rem;
+        &:focus{
+            border-color: $primary-color-green;
+            outline: none;
+        }
+        &.error{
+            border-color: red;
+        }
+    }
+    &__button{
+        width: 20%;
+        background-color: $primary-color-green;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        align-self: self-end;
+        border: 0;
+        font-size: 1.2rem;
+        @include tablet{
+            width: 12%;
+        }
+    }
+    
+}
+.comments__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comments{
+    width: 90%;
+    font-size: 1.2rem;
+    @include desktop{
+        width: 70%;
+    }
+    &__number{
+        border-bottom: 2px solid $secondary-color-green;
+        padding: 1rem 0;
+        margin: 0;
+    }
+   &__nameDate{
+    display: flex;
+    justify-content: space-between;
+    color: $primary-color-green;
+    font-size: 0.8rem;
+    padding-bottom: 0.8rem;
+
+   }
+   &__section{
+    border-bottom: 2px solid $secondary-color-green;
+    padding: 0.8rem 0;
+    &:last-child{
+        border-bottom: 0;
+    }
+   }
+}
+.error{
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
