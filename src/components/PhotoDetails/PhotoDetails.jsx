@@ -1,5 +1,6 @@
 import './PhotoDetails.scss'
 import Like from '../Icons/Like';
+const baseURL = import.meta.env.VITE_API_URL;
 
 
 function PhotoDetails(props){
@@ -8,7 +9,7 @@ function PhotoDetails(props){
        
         <section className="details">
             <section className='details__image-wrapper'>
-            <img src={`http://localhost:8080/${props.clickedPhoto.photo}`} alt={props.clickedPhoto?.photoDescription} className="details__photo" />
+            <img src={`${baseURL}${props.clickedPhoto.photo}`} alt={props.clickedPhoto?.photoDescription} className="details__photo" />
           
             </section>
             

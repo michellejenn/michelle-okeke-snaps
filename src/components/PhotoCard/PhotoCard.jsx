@@ -1,5 +1,6 @@
 import "./PhotoCard.scss";
 import { Link } from "react-router-dom";
+const baseURL = import.meta.env.VITE_API_URL;
 
 // Defining the component for each photo card element. This receives props from the parent component PhotoCardList
 
@@ -9,7 +10,7 @@ function PhotoCard(props){
       <Link to= {`/photos/${props.photoItems.id}`} key ={props.photoItems.id}>
         <section className="card">
         <li className="card__item">
-                <img src={`http://localhost:8080/${props.photoItems.photo}`} alt={`Photo by ${props.photoItems.photographer}`} className="card__image" />
+                <img src={`${baseURL}${props.photoItems.photo}`} alt={`Photo by ${props.photoItems.photographer}`} className="card__image" />
                 <p className="card__photographer">{props.photoItems?.photographer}</p>
                 <ul className="card__tags">
 
