@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Newsreader";
+  src: url("../../assets/fonts/Alternative Files/Newsreader-Regular.woff2") format("woff2"), url("../../assets/fonts/Newsreader-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("../../assets/fonts/Alternative Files/Newsreader-Light.woff2") format("woff2"), url("../../assets/fonts/Newsreader-Light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("../../assets/fonts/Alternative Files/Outfit-Medium.woff2") format("woff2"), url("../../assets/fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("../../assets/fonts/Alternative Files/Newsreader-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Newsreader-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Alternative Files/Outfit-Light.woff2") format("woff2"), url("../../assets/fonts/Outfit-Light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Alternative Files/Outfit-Medium.woff2") format("woff2"), url("../../assets/fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem;
+}
+.header__title {
+  margin: 0;
+  font-family: "Newsreader";
+}
+.header__button {
+  background-color: #EFFAF7;
+  padding: 0rem 1.8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  border: 3px solid #216a59;
+}
+.header__button--active {
+  background-color: #216a59;
+}
+.header__button--active:hover {
+  background-color: #B7CEC9;
+}
+.header__button--passive {
+  color: #216a59;
+  border: 1px solid #216a59;
+}
+.header__button--passive:hover {
+  background-color: #B7CEC9;
+}
+.header__filter-text {
+  font-family: "Outfit";
+  margin: 0;
+  font-size: 1.2rem;
+  color: #216a59;
+}
+.header__filter-text--active {
+  color: white;
+}
+.header__filter-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header__filter-icon--passive {
+  color: #216a59;
+}
+.header__filter-icon--active {
+  color: white;
+}
+.header__home {
+  margin: 0;
+}
+
+.home-link {
+  color: #216a59;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.svg {
+  width: 3rem;
+}/*# sourceMappingURL=Header.css.map */
