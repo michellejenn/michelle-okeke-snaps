@@ -7,6 +7,8 @@ import Form from '../../components/Form/Form';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 
+const baseURL = import.meta.env.VITE_API_URL;
+
 //Comments Page component
 
 function SnapsCommentPage(){
@@ -26,12 +28,15 @@ function SnapsCommentPage(){
     //defining function to get comment from API
     async function getComment(){
         try{
-            const response = await axios.get(
-                `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${params.id}/comments?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501`
-            )
-            //placing latest comment on top
-            const reversedComments =[...response.data].reverse();
-            setComment(reversedComments)
+            const response = await axios.get
+          
+            // (`https://unit-3-project-c5faaab51857.herokuapp.com/photos/${params.id}/comments?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501`)
+            (`${baseURL}/photos/${params.id}/comments`);
+            console.log(params.id);
+          
+            const comments =[...response.data]
+            // const reversedComments =[...response.data].reverse();
+            setComment(comments)
           
         }
         catch (error){
@@ -43,9 +48,14 @@ function SnapsCommentPage(){
     useEffect(() => {
         async function getClickedPhoto(){
             try{
-                const response = await axios.get(
-                    `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${params.id}?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501`
-                );
+                const response = await axios.get
+                // (
+                //     `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${params.id}?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501`
+                    
+                // )
+                (`${baseURL}/photos/${params.id}`)
+                // console.log(params.id)
+                
                 setClickedPhoto(response.data)
             }
             catch(error){
@@ -65,7 +75,8 @@ function SnapsCommentPage(){
     async function handleSubmit(newComment) {
         try{
             await axios.post(
-                `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${params.id}/comments?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501`,
+                // `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${params.id}/comments?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501`,
+                `${baseURL}/photos/${params.id}/comments`,
                 newComment
             )
             getComment();

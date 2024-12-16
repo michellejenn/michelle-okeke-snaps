@@ -4,7 +4,7 @@ import PhotoCard from "../PhotoCard/PhotoCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-
+const baseURL = import.meta.env.VITE_API_URL;
 // Defining the PhotoCardList component. This component passes data through props to the Photocard component and recieves data 
 //from the app component regarding the selected tag of the Taglist component with which it filters the cardlist component
 
@@ -15,8 +15,9 @@ function PhotoCardList(props){
     useEffect(()=>{
         async function getPhotos(){
             try{
-                const response =  await axios.get(
-                    "https://unit-3-project-c5faaab51857.herokuapp.com/photos/?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501")
+                const response =  await axios.get
+                // ("https://unit-3-project-c5faaab51857.herokuapp.com/photos/?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501")
+                    (`${baseURL}/photos`)
                     setPhotos(response.data)
             }
             catch(error){
@@ -35,6 +36,7 @@ function PhotoCardList(props){
     } else {
         filteredPhotos = photos;
     }
+    console.log(photos)
     return(
         <section className="photo">
             <h4 className="photo__header">

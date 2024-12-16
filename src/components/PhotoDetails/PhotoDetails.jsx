@@ -1,6 +1,6 @@
 import './PhotoDetails.scss'
 import Like from '../Icons/Like';
-import Header from '../Header/Header';
+
 
 function PhotoDetails(props){
     return(
@@ -8,8 +8,10 @@ function PhotoDetails(props){
        
         <section className="details">
             <section className='details__image-wrapper'>
-            <img src={props.clickedPhoto.photo} alt={props.clickedPhoto?.photoDescription} className="details__photo" />
+            <img src={`http://localhost:8080/${props.clickedPhoto.photo}`} alt={props.clickedPhoto?.photoDescription} className="details__photo" />
+          
             </section>
+            
             <section className='details__list-wrapper'>
             <ul className="details__tags">
                 {props.clickedPhoto.tags?.map((tag, index) => {
