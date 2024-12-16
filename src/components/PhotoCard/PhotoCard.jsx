@@ -5,7 +5,6 @@ const baseURL = import.meta.env.VITE_API_URL;
 // Defining the component for each photo card element. This receives props from the parent component PhotoCardList
 
 function PhotoCard(props){
-    console.log(props.photoItems.photo)
     return(
       <Link to= {`/photos/${props.photoItems.id}`} key ={props.photoItems.id}>
         <section className="card">

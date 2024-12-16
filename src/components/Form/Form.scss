@@ -34,6 +34,9 @@ input{
         &.error{
             border-color: red;
         }
+    @include tablet{
+        height: 6rem;
+    }
  
     }
     &__name{
@@ -44,6 +47,9 @@ input{
         }
         &.error{
             border-color: red;
+        }
+    @include tablet{
+        height: 3rem;
         }
     }
     &__button{
@@ -84,6 +90,9 @@ input{
     color: $primary-color-green;
     font-size: 0.8rem;
     padding-bottom: 0.8rem;
+    @include tablet{
+        font-size: 1.2rem;
+    }
 
    }
    &__section{

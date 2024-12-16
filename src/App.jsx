@@ -14,7 +14,6 @@ function App() {
         <Route path="/" element={<SnapsHomePage/>}/>
         <Route path ="/photos/:id" element={<SnapsCommentPage/>}/>
         <Route path="*" element={<NotFound/>}/>
-       
       </Routes>
       </BrowserRouter>
     </>

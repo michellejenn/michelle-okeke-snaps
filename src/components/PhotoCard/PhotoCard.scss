@@ -13,6 +13,7 @@
    }
    &__item{
     position: relative;
+    justify-self: center;
     width: 90vw;
     @include tablet{
         width: 40vw;
@@ -29,11 +30,12 @@
         border-radius: 1rem 1rem 0 0;
         @include tablet{
             width: 40vw;
-            height: 35vh;
+            height: auto;
         }
         @include desktop{
             max-width: 28vw;
-            height: 30vh;
+            height: auto;
+
         }
     }
     &__tags{
@@ -63,7 +65,7 @@
         padding: 0.5rem 1rem;
         background-color: white;
         @include tablet{
-            padding: 0.5rem 0.2rem;
+            padding: 0.5rem 0.7rem;
         }
     }
     &__photographer{

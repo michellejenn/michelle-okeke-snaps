@@ -31,7 +31,6 @@ function TagList(props){
             <ul className="filter__list">
                 {Tags.map((tag, index)=>{
                     let isSelectedTag = tag === props.selectedTag;
-                    console.log(props.selectedTag)
                     return(
                         <li onClick={()=>{
                             if(isSelectedTag){props.filterTagClick("");

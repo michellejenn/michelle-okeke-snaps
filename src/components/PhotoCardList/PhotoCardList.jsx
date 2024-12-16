@@ -1,5 +1,4 @@
 import "./PhotoCardList.scss";
-// import photos from "../../data/photos.json";
 import PhotoCard from "../PhotoCard/PhotoCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -35,7 +34,6 @@ function PhotoCardList(props){
     } else {
         filteredPhotos = photos;
     }
-    console.log(photos)
     return(
         <section className="photo">
             <h4 className="photo__header">

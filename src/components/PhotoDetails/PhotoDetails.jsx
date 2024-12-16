@@ -25,7 +25,7 @@ function PhotoDetails(props){
                     <Like/>
                     {props.clickedPhoto.likes} likes
                 </li>
-                <li className="details__photographer">Photo by   {props.clickedPhoto?.photographer}</li>
+                <li className="details__photographer">Photo by {props.clickedPhoto?.photographer}</li>
                 </section>
                 
                 <li className="details__time">{props.formatTimestamp(props.clickedPhoto?.timestamp)}</li>
