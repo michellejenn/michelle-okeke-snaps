@@ -6,8 +6,11 @@
 .filter{
     background-color: $secondary-color-sage;
      padding: 2rem 2rem;
-     margin: 0;
      font-family: "Outfit";
+     @include desktop{
+        padding: 6rem 2rem;
+     }
+   
      @include desktop{
       min-width: 25vw;
      }

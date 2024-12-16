@@ -56,13 +56,15 @@ input{
         width: 20%;
         background-color: $primary-color-green;
         color: white;
-        padding: 0.5rem 1rem;
+        padding: 0.7rem 1rem;
+        margin: 1.5rem 0;
         border-radius: 0.5rem;
         align-self: self-end;
         border: 0;
         font-size: 1.2rem;
         @include tablet{
             width: 12%;
+            padding: 0.5rem 1.3rem;
         }
     }
     
@@ -88,15 +90,17 @@ input{
     display: flex;
     justify-content: space-between;
     color: $primary-color-green;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
     padding-bottom: 0.8rem;
     @include tablet{
         font-size: 1.2rem;
     }
+  
 
    }
    &__section{
-    border-bottom: 2px solid $secondary-color-green;
+    border-bottom: 3px solid $secondary-color-green;
     padding: 0.8rem 0;
     &:last-child{
         border-bottom: 0;

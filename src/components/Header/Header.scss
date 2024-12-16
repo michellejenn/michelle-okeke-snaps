@@ -1,13 +1,15 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/font" as *;
+@use "../../styles/partials/mixins" as *;
 
 .header{
    display: flex;
    justify-content: space-between;
-   margin: 2rem 2rem;
+   margin: 3rem 2rem;
    &__title{
     margin: 0;
     font-family: "Newsreader";
+    font-weight: 400;
     
    }
     &__button{
@@ -17,10 +19,10 @@
         display: flex;
         align-items: center;
         gap: 0.8rem;
-        border: none;
         border-radius: 1.5rem;
         cursor: pointer;
         border: 3px solid $primary-color-green;
+      
         &--active{
             background-color: $primary-color-green;
             &:hover{
@@ -30,6 +32,9 @@
         &--passive{
             color: $primary-color-green;
             border: 1px solid $primary-color-green;
+            @include tablet{
+                border: 3px solid $primary-color-green;
+            }
             &:hover{
                 background-color: $secondary-color-green;
             }
