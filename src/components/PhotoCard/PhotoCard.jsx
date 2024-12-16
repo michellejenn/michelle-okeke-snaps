@@ -11,7 +11,7 @@ function PhotoCard(props){
         <section className="card">
         <li className="card__item">
                 <img src={`${baseURL}${props.photoItems.photo}`} alt={`Photo by ${props.photoItems.photographer}`} className="card__image" />
-                <p className="card__photographer">{props.photoItems?.photographer}</p>
+                <p className="card__photographer">{props.photoItems.photographer}</p>
                 <ul className="card__tags">
 
                     {/* Mapping through the tag array to assign each array element to a list element */}
@@ -23,7 +23,7 @@ function PhotoCard(props){
                         )
                     })}
                 </ul> 
-            </li>
+         </li>
      
       </section>
       </Link>
