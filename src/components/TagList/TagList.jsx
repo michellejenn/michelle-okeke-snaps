@@ -13,7 +13,6 @@ function TagList(props){
     async function getTags(){
         try{
             const response = await axios.get
-            // ("https://unit-3-project-c5faaab51857.herokuapp.com/tags/?api_key=628874a8-ed5d-4c64-9e35-3a54f31dc501")
                 (`${baseURL}/tags`)
             setTags(response.data);
         }
